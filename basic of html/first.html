@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>My first page</title>
+        <link rel="stylesheet" href="all the css/first.css">
+    </head>
+    <body>
+        <h1></h1>
+        <p></p>
+        <li></li>
+
+        <img src="" alt="">
+        <!--底部附近的原因是浏览器
+            会按照代码在文件中的顺序加载 HTML。
+            如果先加载的 JavaScript 期望修改其下方的 
+            TML，那么它可能由于 HTML 尚未被加载而失效
+            。因此，将 JavaScript 
+            代码放在 HTML 页面的底部附近通常是最好的策略。-->
+        <script src="all the js/first.js" defer></script>
+    </body>
+</html>
